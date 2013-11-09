@@ -39,6 +39,7 @@ MRREVIEWER = {Donald M. Davis},
    MRCLASS = {20J06 (55T05 55U10 57M07)},
   MRNUMBER = {2003h:20097},
 MRREVIEWER = {Ross Staffeldt},
+URL = {[url](http://dx.doi.org/10.1016/S0040-9383(01)00012-X)},
 }
 {% endbibtex %}
 
@@ -56,6 +57,7 @@ MRREVIEWER = {Ross Staffeldt},
       ISSN = {1312-7594},
    MRCLASS = {05C38},
   MRNUMBER = {MR2380156},
+  URL = {[url](http://www.m-hikari.com/imf-password2007/57-60-2007/index.html)},
 }
 {% endbibtex %}
 
@@ -74,6 +76,7 @@ MRREVIEWER = {Ross Staffeldt},
    MRCLASS = {05C62 (05C69 06A11)},
   MRNUMBER = {MR2368640 (2008j:05232)},
 MRREVIEWER = {Bernd S. W. Schr{\"o}der},
+URL = {[url](http://dx.doi.org/10.1016/j.ejc.2006.04.012)},
 }
 {% endbibtex %}
 
@@ -93,6 +96,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
      CODEN = {DSMHA4},
    MRCLASS = {05C10},
   MRNUMBER = {MR2421668},
+  URL = {[url](http://dx.doi.org/10.1016/j.disc.2007.07.004)},
 }
 {% endbibtex %}
 
@@ -112,6 +116,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
      CODEN = {DSMHA4},
    MRCLASS = {05C10},
   MRNUMBER = {MR2423402},
+  URL = {[url](http://dx.doi.org/10.1016/j.disc.2007.06.021)},
 }
 {% endbibtex %}
 
@@ -127,6 +132,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
     NUMBER = {1},
      PAGES = {288--294},
       ISSN = {0195-6698},
+	  URL = {[url](http://dx.doi.org/10.1016/j.ejc.2007.12.006)},
 }
 {% endbibtex %}
 
@@ -142,6 +148,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
     NUMBER = {1},
      PAGES = {85--93},
       ISSN = {0012-365X},
+	  URL = {[url](http://dx.doi.org/10.1016/j.disc.2007.12.047)},
 }
 {% endbibtex %}
 
@@ -149,7 +156,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
 @article {MR2867738,
     AUTHOR = {Larrión, F. and Pizaña, M. A. and Villarroel-Flores,
               R.},
-     TITLE = {Small locally {$nK\sb 2$} graphs},
+     TITLE = {Small locally $nK_{2}$ graphs},
    JOURNAL = {Ars Combin.},
   FJOURNAL = {Ars Combinatoria},
     VOLUME = {102},
@@ -167,7 +174,7 @@ MRREVIEWER = {Bernd S. W. Schr{\"o}der},
     AUTHOR = {Merino, Criel and Noble, Steven D. and
               Ramírez-Ibáñez, Marcelino and
               Villarroel-Flores, Rafael},
-     TITLE = {On the structure of the {$h$}-vector of a paving matroid},
+     TITLE = {On the structure of the $h$-vector of a paving matroid},
    JOURNAL = {European J. Combin.},
   FJOURNAL = {European Journal of Combinatorics},
     VOLUME = {33},
