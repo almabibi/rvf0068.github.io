@@ -3,4 +3,5 @@
 This page is based on [[http://octopress.org/][Octopress]] and hosted on [[http://pages.github.com/][GitHub Pages]]. The
 repository for the source is [[https://github.com/rvf0068/rvf0068.github.io][here]].
 
-[[http://drz.ac/2013/01/15/publication-list-using-bibtex-in-octopress/][This]] post was useful to include Bibtex references. 
+[[http://drz.ac/2013/01/15/publication-list-using-bibtex-in-octopress/][This]] post was useful to include Bibtex references. [[http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/][This]] I used to put
+a twitter timeline.

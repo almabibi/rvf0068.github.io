@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Rafael Villarroel Flores]]></title>
   <link href="http://rvf0068.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://rvf0068.github.io/"/>
-  <updated>2013-11-10T13:19:00-06:00</updated>
+  <updated>2013-11-10T15:11:28-06:00</updated>
   <id>http://rvf0068.github.io/</id>
   <author>
     <name><![CDATA[Rafael]]></name>
@@ -21,7 +21,8 @@
     <content type="html"><![CDATA[<p>This page is based on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="http://pages.github.com/">GitHub Pages</a>. The
 repository for the source is <a href="https://github.com/rvf0068/rvf0068.github.io">here</a>.</p>
 
-<p><a href="http://drz.ac/2013/01/15/publication-list-using-bibtex-in-octopress/">This</a> post was useful to include Bibtex references. </p>
+<p><a href="http://drz.ac/2013/01/15/publication-list-using-bibtex-in-octopress/">This</a> post was useful to include Bibtex references. <a href="http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/">This</a> I used to put
+a twitter timeline.</p>
 ]]></content>
   </entry>
   
