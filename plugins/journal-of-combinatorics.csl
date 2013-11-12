@@ -34,7 +34,7 @@
   </macro>
   <macro name="date-year">
     <date variable="issued" prefix="(" suffix=")">
-      <date-part name="year" suffix=" "/>
+      <date-part name="year" suffix=""/>
     </date>
   </macro>
   <macro name="title">
