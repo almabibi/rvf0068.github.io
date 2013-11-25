@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "publications"
-date: 2013-11-09 16:15
+date: 2013-11-25
 comments: true
 sharing: true
 footer: true
@@ -211,6 +211,22 @@ MRREVIEWER = {Hiroshi Maehara},
 }
 {% endbibtex %}
 
-
+{% bibtex %}
+@article{morse,
+year={2013},
+issn={0218-0006},
+journal={Annals of Combinatorics},
+volume={17},
+number={4},
+doi={10.1007/s00026-013-0204-7},
+title={Discrete Morse theory and the homotopy type of clique graphs},
+url={[url](http://dx.doi.org/10.1007/s00026-013-0204-7)},
+publisher={Springer Basel},
+keywords={05C76; 05C69; 57Q10; clique graph; discrete Morse theory; homotopy type},
+author={Larrión, F. and Pizaña, M.A. and Villarroel-Flores, R.},
+pages={743-754},
+language={English}
+}
+{% endbibtex %}
 
 
