@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "publications"
-date: 2013-11-25
+date: 2014-01-14
 comments: true
 sharing: true
 footer: true
@@ -166,6 +166,7 @@ URL = {[url](http://dx.doi.org/10.1016/j.ejc.2006.04.012)},
      CODEN = {ACOMDN},
    MRCLASS = {05C10},
   MRNUMBER = {2867738 (2012i:05066)},
+  URL      = {[url](http://www.combinatorialmath.ca/arscombinatoria/vol102.html)}
 }
 {% endbibtex %}
 
@@ -226,6 +227,22 @@ keywords={05C76; 05C69; 57Q10; clique graph; discrete Morse theory; homotopy typ
 author={Larrión, F. and Pizaña, M.A. and Villarroel-Flores, R.},
 pages={743-754},
 language={English}
+}
+{% endbibtex %}
+
+{% bibtex %}
+@article {MR2867738,
+    AUTHOR = {Larrión, F. and Pizaña, M. A. and Villarroel-Flores,
+              R.},
+     TITLE = {The Clique Behavior Of Circulants With Three Small Jumps},
+   JOURNAL = {Ars Combin.},
+  FJOURNAL = {Ars Combinatoria},
+    VOLUME = {113A},
+      YEAR = {2014},
+     PAGES = {147--160},
+      ISSN = {0381-7032},
+     CODEN = {ACOMDN},
+	 url   = {[url](http://www.combinatorialmath.ca/arscombinatoria/vol113A.html)}
 }
 {% endbibtex %}
 
