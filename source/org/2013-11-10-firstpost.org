@@ -1,4 +1,7 @@
 #+title: First Post
+#+date: 2013-11-10 12:39
+#+options: toc:nil
+#+keywords: octopress
 
 This page is based on [[http://octopress.org/][Octopress]] and hosted on [[http://pages.github.com/][GitHub Pages]]. The
 repository for the source is [[https://github.com/rvf0068/rvf0068.github.io][here]].
