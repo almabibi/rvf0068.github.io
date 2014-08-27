@@ -1,27 +1,48 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://rvf0068.github.io/blog/2013/11/10/first-post/</loc>
-        <lastmod>2013-11-10T15:09:09-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rvf0068.github.io/blog/</loc>
-        <lastmod>2013-11-10T15:09:09-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rvf0068.github.io/blog/archives/</loc>
-        <lastmod>2013-11-12T09:53:37-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rvf0068.github.io/robots.txt</loc>
-        <lastmod>2013-09-21T20:37:36-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rvf0068.github.io/publications/</loc>
-        <lastmod>2014-01-14T11:26:50-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://rvf0068.github.io/</loc>
-        <lastmod>2013-11-12T09:53:37-06:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://rvf0068.github.io/blog/2013/11/10/firstpost/</loc>
+    <lastmod>2013-11-10T12:39:00-06:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://rvf0068.github.io/</loc>
+    <lastmod>2014-08-26T23:29:53-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rvf0068.github.io/blog/archives/</loc>
+    <lastmod>2014-08-26T23:29:53-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://rvf0068.github.io/blog/</loc>
+    <lastmod>2014-08-26T23:29:53-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://rvf0068.github.io/publications/</loc>
+    <lastmod>2014-08-26T23:29:53-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://rvf0068.github.io/</loc>
+    <lastmod>2014-08-26T23:29:53-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
 </urlset>

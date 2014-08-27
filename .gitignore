@@ -1,0 +1,3 @@
+source/org/auto/*
+*.tex
+*.el
