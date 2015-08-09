@@ -1,0 +1,207 @@
+#+title: Simple pgfplots examples
+#+date: 2014-09-20 22:34
+#+options: toc:nil
+#+startup: beamer
+#+published: true
+
+#+latex_header: \usepackage{pgfplots}
+#+latex_header: \pgfplotsset{compat=1.11}
+
+#+beamer: \setbeamertemplate{navigation symbols}{}
+
+#+property: header-args:latex+ :packages '(("" "tikz") ("" "pgfplots")) :border 1pt
+#+property: header-args:latex+ :imagemagick yes :iminoptions -density 300 -resize 400
+#+property: header-args:latex+ :headers '("\\pgfplotsset{compat=1.11}")
+#+property: header-args:latex+ :cache yes
+
+* Only one graph
+
+#+name: 01
+#+header: :file (by-backend (latex "01.tikz") (beamer "01.tikz") (t "01.png"))
+#+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}
+    \addplot {x^2}; 
+   \end{axis}
+\end{tikzpicture}
+#+end_src
+
+#+attr_html: :width 400 :alt 01 :align center
+#+attr_latex: :float t :width ""
+#+RESULTS[3a04c89adac32b172555aa810c10795bb9ee1b9d]: 01
+[[file:01.png]]
+
+* Setting the domain
+  
+  #+name: 02
+  #+header: :file (by-backend (latex "02.tikz") (beamer "02.tikz") (t "02.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}
+    \addplot[domain=-4:4] {x^2}; 
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 02 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[006d5c33d2b470f92cd8dad1749beaf432df838a]: 02
+  [[file:02.png]]
+
+* Two graphs, one with attributes
+  
+  #+name: 03
+  #+header: :file (by-backend (latex "03.tikz") (beamer "03.tikz") (t "03.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot {x}; 
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 03 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[d10135e99afb5b0c070cd7d4951cfeb8078e1afd]: 03
+  [[file:03.png]]
+
+* Labels to the plot
+  
+  #+name: 04
+  #+header: :file (by-backend (latex "04.tikz") (beamer "04.tikz") (t "04.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[title=A plot,xlabel={\(x\)},ylabel={\(x^{2}\)}]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 04 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[88ded7155347e702dc9a649b5eb7b9225d2b0ae4]: 04
+  [[file:04.png]]
+
+* 
+
+  
+  #+name: 05
+  #+header: :file (by-backend (latex "05.tikz") (beamer "05.tikz") (t "05.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[title=A plot,xlabel={\(x\)},ylabel={\(x^{2}\)},
+    legend entries={\(\alpha\),\(\beta\)}]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x}; 
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 05 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[1140afd1a8c4266686442dab2ffba8e86c85c69d]: 05
+  [[file:05.png]]
+
+* 
+  
+  #+name: 06
+  #+header: :file (by-backend (latex "06.tikz") (beamer "06.tikz") (t "06.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[title=A plot,xlabel={\(x\)},ylabel={\(x^{2}\)},
+    legend entries={\(\alpha\),\(\beta\)},grid=major]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x}; 
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 06 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[1e9448ef43a50446d64260c1df2807f7efbfafcb]: 06
+  [[file:06.png]]
+
+* 
+
+  #+name: 07
+  #+header: :file (by-backend (latex "07.tikz") (beamer "07.tikz") (t "07.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[legend entries={\(\alpha\),\(\beta\)},grid=major]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+    \node at (2,2) {Hi};
+    \draw[cyan,line width=5pt] (-2,2) -- (0,10);
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 07 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[925f9d4eb30aef4497c9ed867ef4b78d15c8b643]: 07
+  [[file:07.png]]
+
+* 
+  
+  #+name: 08
+  #+header: :file (by-backend (latex "08.tikz") (beamer "08.tikz") (t "08.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[legend entries={\(\alpha\),\(\beta\)},grid=major]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+    \draw[fill=magenta] (2,2) circle (3pt);
+    \node at (2,1) {\tiny Hi};
+    \node at (2,0) {\large Hello};
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 08 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[a3386d828482ca8cd928a4aa4924a628f7c4d09b]: 08
+  [[file:08.png]]
+
+* Same scale on both axis, with ~axis equal image~.
+  
+  #+name: 09
+  #+header: :file (by-backend (latex "09.tikz") (beamer "09.tikz") (t "09.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[axis equal image]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 09 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[28325f8b31f2be5f490ae46953bda57d475a4b98]: 09
+  [[file:09.png]]
+
+* Nice axis, with ~axis lines=middle~.  
+
+  #+name: 10
+  #+header: :file (by-backend (latex "10.tikz") (beamer "10.tikz") (t "10.png"))
+  #+begin_src latex :results raw file :exports both
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[axis lines=middle]
+    \addplot[domain=-4:4,red,very thick] {x^2-2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+  \end{axis}
+\end{tikzpicture}
+  #+end_src
+  
+  #+attr_html: :width 400 :alt 10 :align center
+  #+attr_latex: :float t :width ""
+  #+RESULTS[dbafbedd63b492a01429d36dd0f3112d14a7d8c8]: 10
+  [[file:10.png]]
+
+
+* COMMENT Local Variables
+
+# Local Variables:
+# org-confirm-babel-evaluate: nil
+# End:
