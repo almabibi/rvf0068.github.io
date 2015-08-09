@@ -18,5 +18,6 @@ source/org/*.html
 /source/index/index.md
 /source/index.md
 source/_posts/
+source/images/
 *.png
 *.tikz
