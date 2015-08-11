@@ -1,0 +1,7 @@
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[title=A plot,xlabel={\(x\)},ylabel={\(x^{2}\)},
+    legend entries={\(\alpha\),\(\beta\)},grid=major]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x}; 
+  \end{axis}
+\end{tikzpicture}

@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Simple Pgfplots Examples - Rafael Villarroel</title>
+  <meta name="author" content="Rafael">
+
+  
+  <meta name="description" content="Only one graph 011
+2
+3
+4
+5
+\begin{tikzpicture}[scale=0.7] \begin{axis} \addplot {x^2}; \end{axis}
+\end{tikzpicture} Setting the domain 021
+2
+3
+4
+5
+\ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rvf0068.github.io/blog/2014/09/20/pgfplots">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rafael Villarroel" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rafael Villarroel</a></h1>
+  
+    <h2>Home Page</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rvf0068.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/blog/archives">Blog</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Simple Pgfplots Examples</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-20T22:34:00-05:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:34 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://rvf0068.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1 id="only-one-graph">Only one graph</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>01</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line">    <span class="k">\addplot</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">   <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/01.png" /></p>
+
+<h1 id="setting-the-domain">Setting the domain</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>02</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/02.png" /></p>
+
+<h1 id="two-graphs-one-with-attributes">Two graphs, one with attributes</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>03</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/03.png" /></p>
+
+<h1 id="labels-to-the-plot">Labels to the plot</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>04</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[title=A plot,xlabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x</span><span class="s">\)</span><span class="nb">}</span>,ylabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x^{</span><span class="m">2</span><span class="nb">}</span><span class="s">\)</span><span class="nb">}</span>]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/04.png" /></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>05</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[title=A plot,xlabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x</span><span class="s">\)</span><span class="nb">}</span>,ylabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x^{</span><span class="m">2</span><span class="nb">}</span><span class="s">\)</span><span class="nb">}</span>,
+</span><span class="line">    legend entries=<span class="nb">{</span><span class="s">\(</span><span class="nv">\alpha</span><span class="s">\)</span>,<span class="s">\(</span><span class="nv">\beta</span><span class="s">\)</span><span class="nb">}</span>]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/05.png" /></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>06</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[title=A plot,xlabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x</span><span class="s">\)</span><span class="nb">}</span>,ylabel=<span class="nb">{</span><span class="s">\(</span><span class="nb">x^{</span><span class="m">2</span><span class="nb">}</span><span class="s">\)</span><span class="nb">}</span>,
+</span><span class="line">    legend entries=<span class="nb">{</span><span class="s">\(</span><span class="nv">\alpha</span><span class="s">\)</span>,<span class="s">\(</span><span class="nv">\beta</span><span class="s">\)</span><span class="nb">}</span>,grid=major]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/06.png" /></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>07</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[legend entries=<span class="nb">{</span><span class="s">\(</span><span class="nv">\alpha</span><span class="s">\)</span>,<span class="s">\(</span><span class="nv">\beta</span><span class="s">\)</span><span class="nb">}</span>,grid=major]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\node</span> at (2,2) <span class="nb">{</span>Hi<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\draw</span><span class="na">[cyan,line width=5pt]</span> (-2,2) -- (0,10);
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/07.png" /></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>08</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[legend entries=<span class="nb">{</span><span class="s">\(</span><span class="nv">\alpha</span><span class="s">\)</span>,<span class="s">\(</span><span class="nv">\beta</span><span class="s">\)</span><span class="nb">}</span>,grid=major]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\draw</span><span class="na">[fill=magenta]</span> (2,2) circle (3pt);
+</span><span class="line">    <span class="k">\node</span> at (2,1) <span class="nb">{</span><span class="k">\tiny</span> Hi<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\node</span> at (2,0) <span class="nb">{</span><span class="k">\large</span> Hello<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/08.png" /></p>
+
+<h1 id="same-scale-on-both-axis-with-axis-equal-image">Same scale on both axis, with <code>axis equal image</code>.</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>09</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[axis equal image]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/09.png" /></p>
+
+<h1 id="nice-axis-with-axis-linesmiddle">Nice axis, with <code>axis lines=middle</code>.</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>10</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="latex"><span class="line"><span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>[scale=0.7]
+</span><span class="line">  <span class="k">\begin</span><span class="nb">{</span>axis<span class="nb">}</span>[axis lines=middle]
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,red,very thick]</span> <span class="nb">{</span>x<span class="nb">^</span>2-2<span class="nb">}</span>;
+</span><span class="line">    <span class="k">\addplot</span><span class="na">[domain=-4:4,blue,very thick]</span> <span class="nb">{</span>x<span class="nb">}</span>;
+</span><span class="line">  <span class="k">\end</span><span class="nb">{</span>axis<span class="nb">}</span>
+</span><span class="line"><span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><img class="center" src="/images/10.png" /></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rafael</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-09-20T22:34:00-05:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:34 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rvf0068.github.io/blog/2014/09/20/pgfplots/" data-via="rvf0068" data-counturl="http://rvf0068.github.io/blog/2014/09/20/pgfplots/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/05/software-libre/" title="Previous Post: Software libre para matemáticas">&laquo; Software libre para matemáticas</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/20/pgfplots/">Simple Pgfplots Examples</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/05/software-libre/">Software Libre Para Matemáticas</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/10/firstpost/">First Post</a>
+      </li>
+    
+  </ul>
+</section>
+ <section>
+     <h1>Twitter</h1>
+     <!-- PASTE THE WIDGET CODE HERE --> 
+<a class="twitter-timeline"  href="https://twitter.com/rvf0068"  data-widget-id="399380737658335232">Tweets by @rvf0068</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ </section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/rvf0068">@rvf0068</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'rvf0068',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rafael -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rvf0068';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rvf0068.github.io/blog/2014/09/20/pgfplots/';
+        var disqus_url = 'http://rvf0068.github.io/blog/2014/09/20/pgfplots/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

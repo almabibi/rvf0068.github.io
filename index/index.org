@@ -1,5 +1,6 @@
 #+title: 
 #+date:  
+#+layout: page
 
 I am a mathematician working at [[http://www.uaeh.edu.mx/][UAEH]]. My research is mainly on
 Combinatorics and Graph Theory.
@@ -9,6 +10,5 @@ Combinatorics and Graph Theory.
 * COMMENT Local Variables
 
 # Local Variables:
-# org-octopress-is-post: nil
 # org-hide-emphasis-markers: nil
 # End:

@@ -1,0 +1,6 @@
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[axis lines=middle]
+    \addplot[domain=-4:4,red,very thick] {x^2-2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+  \end{axis}
+\end{tikzpicture}

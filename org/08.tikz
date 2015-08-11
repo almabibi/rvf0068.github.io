@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}[legend entries={\(\alpha\),\(\beta\)},grid=major]
+    \addplot[domain=-4:4,red,very thick] {x^2}; 
+    \addplot[domain=-4:4,blue,very thick] {x};
+    \draw[fill=magenta] (2,2) circle (3pt);
+    \node at (2,1) {\tiny Hi};
+    \node at (2,0) {\large Hello};
+  \end{axis}
+\end{tikzpicture}

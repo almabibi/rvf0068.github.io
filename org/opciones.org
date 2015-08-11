@@ -1,0 +1,45 @@
+# FORMATO PARA PRESENTACION
+#+latex_class: beamer
+#+latex_class_options: [spanish,presentation]
+#+startup: beamer
+
+#+beamer_theme: bunsen
+#+beamer_outer_theme: bunsen
+
+# #+beamer_color_theme: shark
+# #+beamer_inner_theme: chamfered [outline,shadow]
+# #+beamer_outer_theme: wuerzburg [glossy,nofootline]
+
+#+latex_header: \usepackage{bera}
+#+latex_header: \usepackage{tkz-berge}
+
+#+latex_header: \usepackage[spanish,mexico]{babel}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \lstset{%
+#+latex_header:     basicstyle=\ttfamily,
+#+latex_header:     breaklines=true,
+#+latex_header:     showstringspaces=false,
+#+latex_header:   }
+#+latex_header: \lstset{
+#+latex_header:   literate={í}{{\'\i}}1
+#+latex_header:            {á}{{\'a}}1
+#+latex_header:            {é}{{\'e}}1
+#+latex_header:            {ó}{{\'o}}1
+#+latex_header:            {ú}{{\'u}}1
+#+latex_header: }
+
+#+options: H:2 toc:nil ':t
+
+# #+beamer_header: \beamerdefaultoverlayspecification{<+->}
+
+#+latex_header: % remove space between margin and lists
+#+latex_header: \usepackage{enumitem}
+#+latex_header: \setitemize{label=\usebeamerfont*{itemize item}%
+#+latex_header:   \usebeamercolor[fg]{itemize item}
+#+latex_header:   \usebeamertemplate{itemize item}}
+#+latex_header: \setlist{leftmargin=*,labelindent=0cm}
+#+latex_header: \setenumerate[1]{%
+#+latex_header:   label=\protect\usebeamerfont{enumerate item}%
+#+latex_header:         \protect\usebeamercolor[fg]{enumerate item}%
+#+latex_header:         \insertenumlabel.}
+

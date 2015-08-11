@@ -1,0 +1,656 @@
+#+title: Software libre para matemáticas
+#+author: Rafael Villarroel
+#+email: rafaelv@uaeh.edu.mx
+#+date: 2014-09-05
+#+language: es
+#+property: header-args:latex+ :cache yes
+#+published: false
+
+#+setupfile: opciones.org
+
+#+beamer: \setbeamertemplate{navigation symbols}{}
+#+beamer: \setbeamertemplate{items}[circle]
+#+beamer: \languagepath{spanish}
+#+beamer: \setbeamertemplate{background}
+#+beamer:  {\includegraphics[width=\paperwidth,height=\paperheight]{slide_bg}}
+#+beamer: \setbeamertemplate{footline}[bunsentheme]
+
+* ¿Qué es el software libre?
+
+** 
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   #+beamer: \vspace*{1.5cm}
+
+   Un programa es [[http://www.gnu.org/philosophy/free-sw.es.html][software libre]] si los usuarios tienen las cuatro libertades esenciales:
+
+   - La libertad de ejecutar el programa como se desea, con cualquier
+     propósito (libertad 0).
+   - La libertad de estudiar cómo funciona el programa, y cambiarlo
+     para que haga lo que usted quiera (libertad 1). El acceso al
+     código fuente es una condición necesaria para ello.
+   - La libertad de redistribuir copias para ayudar a su prójimo
+     (libertad 2).
+   - La libertad de distribuir copias de sus versiones modificadas a
+     terceros (libertad 3). Esto le permite ofrecer a toda la comunidad
+     la oportunidad de beneficiarse de las modificaciones. El acceso al
+     código fuente es una condición necesaria para ello.
+ 
+** Ejemplos
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+*** Software libre					      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.3
+    :BEAMER_env: block
+    :END:
+    - Linux
+    - \TeX
+    - Geogebra
+    - Python
+    - Sage
+    - Emacs\dots
+
+*** Software gratuito, no libre				      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.3
+    :BEAMER_env: block
+    :END:
+    - Acrobat Reader
+    - Skype\dots
+
+*** Servicios gratuitos, no libres			      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    - Facebook
+    - Twitter
+    - Gmail
+    - Dropbox\dots
+
+*** Software 'comercial' (propietario)
+    Windows 8, Word, Power Point, MacOS, Photoshop, Mathematica,
+    Maple, Matlab, Winedt\dots.
+
+* Historia del software libre
+
+** Personajes
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+*** Richard Stallman					      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :BEAMER_env: block
+    :END:
+
+    #+caption: 
+    #+attr_latex: :width 3cm
+    [[file:stallman.jpg]]
+
+    - Creador de la /Free Software Foundation/.
+    - Bajo su dirección, se crearon herramientas destinadas a crear un
+      sistema completo y libre.
+
+
+*** Linus Torvalds					      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :BEAMER_env: block
+    :END:
+
+    #+caption: 
+    #+attr_latex: :width 3cm
+    [[file:torvalds.jpeg]]
+
+    - Creador de /Linux/, el núcleo de un sistema operativo libre. 
+
+* ¿Qué es Linux?
+
+** De http://www.linux-es.org/sobre_linux
+
+*** Linux 						      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.7
+    :END:
+
+    #+BEGIN_QUOTE
+    Linux es un sistema operativo, compatible Unix. Dos
+    características muy peculiares lo diferencian del resto de
+    sistemas que podemos encontrar en el mercado, la primera, es que
+    es libre, esto significa que no tenemos que pagar ningun tipo de
+    licencia a ninguna casa desarrolladora de software por el uso del
+    mismo, la segunda, es que el sistema viene acompañado del código
+    fuente.
+    #+END_QUOTE
+
+*** Tux								      :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.25
+    :END:
+
+    #+caption:
+    #+attr_latex: :width 2.5cm
+    [[file:tux.png]]
+
+* Aspectos de Linux
+
+** Linux no es todo
+
+   Linux no es la computadora, sino sólo el núcleo de un sistema
+   completo, como el motor de un carro no es un carro, o la tinta no
+   es un libro.
+
+   #+caption: 
+   #+attr_latex: :width 5cm
+   [[file:engine.jpg]]
+
+** Linux no es otro Windows
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   Linux no es una versión gratis de Windows ni de MacOS. Sin embargo,
+   existen aplicaciones de Windows para las que hay versión en
+   Linux. Y además, hay otras mejores en Linux.
+
+*** 								      :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :END:
+    #+caption: 
+    #+attr_latex: :width 2cm
+    [[file:windows.png]]
+
+    Office.
+
+*** 								      :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.45
+    :END:
+    #+caption: 
+    #+attr_latex: :width 2cm
+    [[file:smalltux.jpeg]]
+
+    Libre Office, Open Office, WPS Office,\dots 
+
+*** \LaTeX
+    Pero para editar documentos matemáticos, lo mejor es \LaTeX.
+
+** Distribuciones
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   - Puesto que Linux y las herramientas para crear un sistema
+     completo son libres, muchas personas los han creado, y existen
+     varias *distribuciones* .
+   - Usar una distribución de Linux no es inherentemente más difícil
+     que usar Windows (Android está basado en Linux).
+
+*** Ubuntu 						      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+
+    #+caption: 
+    #+attr_latex: :width 3cm
+    [[file:ubuntu.jpeg]]
+
+*** Fedora						      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+
+    #+caption: 
+    #+attr_latex: :width 3cm
+    [[file:fedora.jpeg]]
+
+*** CentOS						      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+
+    #+caption: 
+    #+attr_latex: :width 3cm
+    [[file:centos.jpeg]]
+
+** Porqué no Windows
+
+   #+BEGIN_QUOTE
+   Although about 3 million computers get sold every year in China,
+   people don't pay for the software. Someday they will, though.  And
+   as long as they're going to steal it, we want them to steal
+   ours. They'll get sort of addicted, and then we'll somehow figure
+   out how to collect sometime in the next decade. (Bill Gates, 1998)
+   #+END_QUOTE
+
+** TBBT
+
+   #+caption:
+   #+attr_latex: :width 9cm
+   [[file:sheldon.jpeg]]
+
+   #+beamer: \pause
+
+   #+BEGIN_QUOTE
+   My new computer came with Windows 7. Windows 7 is much more user
+   friendly than Windows Vista. I don't like that. (Sheldon Cooper, 2010)
+   #+END_QUOTE
+
+** Porqué no Mac
+
+   #+caption:
+   #+attr_latex: :width 11cm
+   [[file:apple-store.jpg]]
+
+* Algoritmos
+
+** Multiplicar dos números
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   - Supongamos que hacemos una máquina que pueda multiplicar, por
+     ejemplo \(23485\times 741\):
+     #+attr_latex: :align r
+     | 23484        |
+     | \times 741   |
+     |--------------|
+     | \dots     4 |
+
+   - Ya que hicimos un algoritmo para multiplicar, considerar que se
+     puede ahorrar tiempo al multiplicar
+     p. ej. \((3400000)(1200000)\).
+
+** Ejemplo: Un programa en Python
+
+   Tomado de http://stackoverflow.com/a/16996439/577007
+
+   #+BEGIN_SRC python
+     def primes(n):
+         primfac = []
+         d = 2
+         while d*d <= n:
+             while (n % d) == 0:
+                 primfac.append(d)
+                 n /= d
+             d +=1
+         if n > 1:
+             primfac.append(n)
+         return primfac
+   #+END_SRC
+
+** El problema de las carreteras
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.45
+    :END:
+
+    Supongamos que tenemos 6 ciudades, que queremos conectar con
+    carreteras de manera que sea posible viajar de una a otra.
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.45
+    :END:
+    
+    #+name: ciudades
+    #+header: :imagemagick yes :iminoptions -density 300 -resize 400
+    #+header: :packages '(("" "tikz") ("" "tkz-berge")) :border 1pt
+    #+header: :file (by-backend (latex "ciudades.tikz") (beamer "ciudades.tikz") (t "ciudades.png"))
+    #+header: :cache yes
+    #+begin_src latex :results raw file
+      \begin{tikzpicture}
+        \grEmptyCycle[RA=2]{6}
+        \uncover<2->{\Edge[lw=2pt,color=blue](a0)(a1)}
+        \uncover<3->{\Edge[lw=2pt,color=blue](a0)(a3)}
+        \uncover<4->{\Edge[lw=2pt,color=blue](a2)(a5)}
+        \uncover<5->{\Edge[lw=2pt,color=blue](a0)(a2)}
+        \uncover<6->{\Edge[lw=2pt,color=blue](a1)(a4)}
+      \end{tikzpicture}
+    #+end_src
+
+    #+attr_html: :width 400 :alt ciudades :align center
+    #+attr_latex: :caption Ciudades :width ""
+    #+RESULTS[b185a9d5257c9568454dbb4eb4faa757be3251b6]: ciudades
+    [[file:ciudades.png]]
+
+** Costos
+
+    #+beamer: \bigskip
+
+    Imaginemos que los costos de construir las carreteras están dados
+    por los siguientes datos:
+
+
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |    |
+    |----+----+----|
+    | a0 | a1 |  1 |
+    |    | a2 |  3 |
+    |    | a3 |  2 |
+    |    | a4 | 20 |
+    |    | a5 |  2 |
+    | a1 | a2 |  4 |
+    |    | a3 |  2 |
+    |    | a4 |  4 |
+    |    | a5 |  5 |
+    |----+----+----|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |   |
+    |----+----+---|
+    | a2 | a3 | 3 |
+    |    | a4 | 6 |
+    |    | a5 | 2 |
+    | a3 | a4 | 4 |
+    |    | a5 | 5 |
+    | a4 | a5 | 4 |
+    |----+----+---|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.35
+    :END:
+    
+    #+name: ciudades-02
+    #+header: :imagemagick yes :iminoptions -density 300 -resize 400
+    #+header: :packages '(("" "tikz") ("" "tkz-berge")) :border 1pt
+    #+header: :file (by-backend (latex "ciudades-02.tikz") (beamer "ciudades-02.tikz") (t "ciudades-02.png"))
+    #+header: :cache yes
+    #+begin_src latex :results raw file
+      \begin{tikzpicture}
+        \grEmptyCycle[RA=1.5]{6}
+        \uncover<2>{%
+          \Edge[lw=2pt,color=magenta](a0)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a5)
+          \draw (0,-2) node[fill=magenta!50!white] {Cuesta 16};
+          }
+        \uncover<3>{%
+          \Edge[lw=2pt,color=green](a0)(a1)
+          \Edge[lw=2pt,color=green](a0)(a2)
+          \Edge[lw=2pt,color=green](a0)(a3)
+          \Edge[lw=2pt,color=green](a0)(a4)
+          \Edge[lw=2pt,color=green](a0)(a5)
+          \draw (0,-2) node[fill=green!50!white] {Cuesta 28};
+        }
+        \uncover<4>{%
+          \Edge[lw=2pt,color=blue](a0)(a1)
+          \Edge[lw=2pt,color=blue](a0)(a3)
+          \Edge[lw=2pt,color=blue](a2)(a5)
+          \Edge[lw=2pt,color=blue](a0)(a2)
+          \Edge[lw=2pt,color=blue](a1)(a4)
+          \draw (0,-2) node[fill=blue!50!white] {Cuesta 12};
+        }
+        \uncover<5->{\Edge[lw=2pt,color=olive](a0)(a1)}
+        \uncover<6->{\Edge[lw=2pt,color=olive](a0)(a3)}
+        \uncover<7->{\Edge[lw=2pt,color=olive](a0)(a5)}
+        \uncover<8>{\Edge[lw=2pt,color=red](a1)(a3)}
+        \uncover<10->{\Edge[lw=2pt,color=olive](a2)(a5)}
+        \uncover<11>{\Edge[lw=2pt,color=red](a0)(a2)}
+        \uncover<13>{\Edge[lw=2pt,color=red](a3)(a2)}
+        \uncover<15>{\Edge[lw=2pt,color=red](a1)(a2)}
+        \uncover<17->{\Edge[lw=2pt,color=olive](a1)(a4)}
+	\uncover<18->{\draw (0,-2) node[fill=olive!50!white] {Cuesta 11};}
+      \end{tikzpicture}
+    #+end_src
+    
+    #+attr_html: :width 400 :alt ciudades-02 :align center
+    #+attr_latex: :float t :width ""
+    #+RESULTS[92de380f8766afae043be5dd8b9d4fdeb1418616]: ciudades-02
+    [[file:ciudades-02.png]]
+
+    
+** El algoritmo mejor
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   - En general, una gráfica con \(n\) vértices tiene \(n^{n-2}\)
+     *árboles generadores*.
+   - Se puede demostrar que el *algoritmo glotón* siempre escoge el
+     árbol de menor costo.
+   - El algoritmo glotón es muy eficiente aún para gráficas de
+     millones de vértices.
+   - Otra manera de proceder es ir eliminando primero la carretera
+     más costosa. Después la siguiente más costosa. Y así
+     sucesivamente hasta que encontremos una que /absolutamente/ debamos
+     construir. Continuar el procedimiento.
+   - El algoritmo siempre termina con un árbol generador, tal vez
+     distinto al obtenido anteriormente, pero del mismo costo.
+
+** El problema del agente viajero
+
+   #+beamer: \bigskip
+
+   Queremos recorrer las seis ciudades y regresar
+   al punto de partida. Los costos de viajar entre ciudades están
+   dados:
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |    |
+    |----+----+----|
+    | a0 | a1 |  1 |
+    |    | a2 |  3 |
+    |    | a3 |  2 |
+    |    | a4 | 20 |
+    |    | a5 |  2 |
+    | a1 | a2 |  4 |
+    |    | a3 |  2 |
+    |    | a4 |  4 |
+    |    | a5 |  5 |
+    |----+----+----|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |   |
+    |----+----+---|
+    | a2 | a3 | 3 |
+    |    | a4 | 6 |
+    |    | a5 | 2 |
+    | a3 | a4 | 4 |
+    |    | a5 | 5 |
+    | a4 | a5 | 4 |
+    |----+----+---|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.35
+    :END:
+    
+    #+name: ciudades-03
+    #+header: :imagemagick yes :iminoptions -density 300 -resize 400
+    #+header: :packages '(("" "tikz") ("" "tkz-berge")) :border 1pt
+    #+header: :file (by-backend (latex "ciudades-03.tikz") (beamer "ciudades-03.tikz") (t "ciudades-03.png"))
+    #+header: :cache yes
+    #+begin_src latex :results raw file
+      \begin{tikzpicture}
+        \grEmptyCycle[RA=1.5]{6}
+        \uncover<2>{%
+          \Edge[lw=2pt,color=magenta](a0)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a5)
+          \Edge[lw=2pt,color=magenta](a5)(a0)
+          \draw (0,-2) node[fill=magenta!50!white] {Cuesta 18};
+          }
+      \end{tikzpicture}
+    #+end_src
+    
+    #+attr_html: :width 400 :alt ciudades-03 :align center
+    #+attr_latex: :float t :width ""
+    #+RESULTS[638bfbcb8db4965c96cf159e753bc583796c3477]: ciudades-03
+    [[file:ciudades-03.png]]
+
+** Si el agente viajero usara el algoritmo glotón
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |    |
+    |----+----+----|
+    | a0 | a1 |  1 |
+    |    | a2 |  3 |
+    |    | a3 |  2 |
+    |    | a4 | 20 |
+    |    | a5 |  2 |
+    | a1 | a2 |  4 |
+    |    | a3 |  2 |
+    |    | a4 |  4 |
+    |    | a5 |  5 |
+    |----+----+----|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.3
+    :END:
+    | De | A  |   |
+    |----+----+---|
+    | a2 | a3 | 3 |
+    |    | a4 | 6 |
+    |    | a5 | 2 |
+    | a3 | a4 | 4 |
+    |    | a5 | 5 |
+    | a4 | a5 | 4 |
+    |----+----+---|
+
+*** 							      :B_block:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_col: 0.35
+    :END:
+    
+    #+name: ciudades-04
+    #+header: :imagemagick yes :iminoptions -density 300 -resize 400
+    #+header: :packages '(("" "tikz") ("" "tkz-berge")) :border 1pt
+    #+header: :file (by-backend (latex "ciudades-04.tikz") (beamer "ciudades-04.tikz") (t "ciudades-04.png"))
+    #+header: :cache yes
+    #+begin_src latex :results raw file
+      \begin{tikzpicture}
+        \grEmptyCycle[RA=1.5]{6}
+        \uncover<2->{\Edge[lw=2pt,color=magenta](a0)(a1)}
+        \uncover<3->{\Edge[lw=2pt,color=magenta](a3)(a1)}
+        \uncover<4->{\Edge[lw=2pt,color=magenta](a3)(a2)}
+        \uncover<5->{\Edge[lw=2pt,color=magenta](a5)(a2)}
+        \uncover<6->{\Edge[lw=2pt,color=magenta](a5)(a4)}
+        \uncover<7->{\Edge[lw=2pt,color=magenta](a0)(a4)}
+	\uncover<8->{\draw (0,-2) node[fill=magenta!50!white] {Cuesta 32};}
+      \end{tikzpicture}
+    #+end_src
+    
+    #+attr_html: :width 400 :alt ciudades-04 :align center
+    #+attr_latex: :float t :width ""
+    #+RESULTS[2114c716028184edf61b059db5247ac638b3d7c2]: ciudades-04
+    [[file:ciudades-04.png]]
+
+** Notas sobre el problema del agente viajero
+   :PROPERTIES:
+   :BEAMER_act: [<+->]
+   :END:
+
+   - No se conoce un algoritmo "eficiente" que resuelva todas las
+     instancias del problema.
+   - Tampoco se ha demostrado que no exista tal algoritmo.
+   - Sin embargo, se han encontrado algoritmos aceptables si los
+     costos satisfacen ciertas hipótesis.
+
+** Algoritmos cerrados
+
+[[http://reference.wolfram.com/language/tutorial/WhyYouDoNotUsuallyNeedToKnowAboutInternals.html][Why You Do Not Usually Need to Know about Internals]]
+
+#+caption: 
+#+ATTR_LaTeX: :width 10cm 
+[[file:mathinternals1.png]]
+
+** 
+
+   #+beamer: \vspace*{1.5cm}
+
+   #+BEGIN_QUOTE
+   Particularly in more advanced applications of the Wolfram System,
+   it may sometimes seem worthwhile to try to analyze internal
+   algorithms in order to predict which way of doing a given
+   computation will be the most efficient. And there are indeed
+   occasionally major improvements that you will be able to make in
+   specific computations as a result of such analyses.
+
+   But most often the analyses will not be worthwhile. For the
+   internals of the Wolfram System are quite complicated, and even
+   given a basic description of the algorithm used for a particular
+   purpose, it is usually extremely difficult to reach a reliable
+   conclusion about how the detailed implementation of this algorithm
+   will actually behave in particular circumstances.
+   #+END_QUOTE
+
+** 
+
+   [[http://www.businessweek.com/stories/2004-08-17/linus-torvalds-benevolent-dictatorship][Linus Torvalds' Benevolent Dictatorship - Businessweek]]
+
+   #+beamer: \bigskip
+
+   #+BEGIN_QUOTE
+   I think, fundamentally, open source does tend to be more stable
+   software. It's the right way to do things.
+
+   I compare it to science vs. witchcraft. 
+
+   In science, the whole system builds on people looking at other
+   people's results and building on top of them.
+
+   In witchcraft, somebody had a small secret and guarded it -- but
+   never allowed others to really understand it and build on it.
+   #+END_QUOTE
+
+* Fin
+
+** 
+
+#+caption: 
+#+attr_latex: :width 5cm
+[[file:calm.jpeg]]
+
+* COMMENT Maintenance
+
+# Local Variables:
+# input-activate: t
+# org-confirm-babel-evaluate: nil
+# End:

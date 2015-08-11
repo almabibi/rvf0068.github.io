@@ -1,0 +1,8 @@
+\begin{tikzpicture}
+        \grEmptyCycle[RA=2]{6}
+        \uncover<2->{\Edge[lw=2pt,color=blue](a0)(a1)}
+        \uncover<3->{\Edge[lw=2pt,color=blue](a0)(a3)}
+        \uncover<4->{\Edge[lw=2pt,color=blue](a2)(a5)}
+        \uncover<5->{\Edge[lw=2pt,color=blue](a0)(a2)}
+        \uncover<6->{\Edge[lw=2pt,color=blue](a1)(a4)}
+      \end{tikzpicture}

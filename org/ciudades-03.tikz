@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+        \grEmptyCycle[RA=1.5]{6}
+        \uncover<2>{%
+          \Edge[lw=2pt,color=magenta](a0)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a5)
+          \Edge[lw=2pt,color=magenta](a5)(a0)
+          \draw (0,-2) node[fill=magenta!50!white] {Cuesta 18};
+          }
+      \end{tikzpicture}

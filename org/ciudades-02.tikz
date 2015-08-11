@@ -1,0 +1,37 @@
+\begin{tikzpicture}
+        \grEmptyCycle[RA=1.5]{6}
+        \uncover<2>{%
+          \Edge[lw=2pt,color=magenta](a0)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a1)
+          \Edge[lw=2pt,color=magenta](a2)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a3)
+          \Edge[lw=2pt,color=magenta](a4)(a5)
+          \draw (0,-2) node[fill=magenta!50!white] {Cuesta 16};
+          }
+        \uncover<3>{%
+          \Edge[lw=2pt,color=green](a0)(a1)
+          \Edge[lw=2pt,color=green](a0)(a2)
+          \Edge[lw=2pt,color=green](a0)(a3)
+          \Edge[lw=2pt,color=green](a0)(a4)
+          \Edge[lw=2pt,color=green](a0)(a5)
+          \draw (0,-2) node[fill=green!50!white] {Cuesta 28};
+        }
+        \uncover<4>{%
+          \Edge[lw=2pt,color=blue](a0)(a1)
+          \Edge[lw=2pt,color=blue](a0)(a3)
+          \Edge[lw=2pt,color=blue](a2)(a5)
+          \Edge[lw=2pt,color=blue](a0)(a2)
+          \Edge[lw=2pt,color=blue](a1)(a4)
+          \draw (0,-2) node[fill=blue!50!white] {Cuesta 12};
+        }
+        \uncover<5->{\Edge[lw=2pt,color=olive](a0)(a1)}
+        \uncover<6->{\Edge[lw=2pt,color=olive](a0)(a3)}
+        \uncover<7->{\Edge[lw=2pt,color=olive](a0)(a5)}
+        \uncover<8>{\Edge[lw=2pt,color=red](a1)(a3)}
+        \uncover<10->{\Edge[lw=2pt,color=olive](a2)(a5)}
+        \uncover<11>{\Edge[lw=2pt,color=red](a0)(a2)}
+        \uncover<13>{\Edge[lw=2pt,color=red](a3)(a2)}
+        \uncover<15>{\Edge[lw=2pt,color=red](a1)(a2)}
+        \uncover<17->{\Edge[lw=2pt,color=olive](a1)(a4)}
+	\uncover<18->{\draw (0,-2) node[fill=olive!50!white] {Cuesta 11};}
+      \end{tikzpicture}

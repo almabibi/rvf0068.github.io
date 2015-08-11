@@ -1,0 +1,5 @@
+\begin{tikzpicture}[scale=0.7]
+  \begin{axis}
+    \addplot {x^2}; 
+   \end{axis}
+\end{tikzpicture}
