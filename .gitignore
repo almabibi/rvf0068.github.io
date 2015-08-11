@@ -21,3 +21,4 @@ source/_posts/
 source/images/
 *.png
 *.tikz
+/Gemfile.lock
