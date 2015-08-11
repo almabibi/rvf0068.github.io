@@ -28,7 +28,7 @@
 #+latex_header:            {ú}{{\'u}}1
 #+latex_header: }
 
-#+options: H:2 toc:nil
+#+options: H:2 toc:nil ':t
 
 # #+beamer_header: \beamerdefaultoverlayspecification{<+->}
 

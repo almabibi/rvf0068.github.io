@@ -121,6 +121,7 @@
     :BEAMER_col: 0.7
     :END:
 
+    #+BEGIN_QUOTE
     Linux es un sistema operativo, compatible Unix. Dos
     características muy peculiares lo diferencian del resto de
     sistemas que podemos encontrar en el mercado, la primera, es que
@@ -128,6 +129,7 @@
     licencia a ninguna casa desarrolladora de software por el uso del
     mismo, la segunda, es que el sistema viene acompañado del código
     fuente.
+    #+END_QUOTE
 
 *** Tux								      :BMCOL:
     :PROPERTIES:
@@ -324,7 +326,7 @@
 
     #+attr_html: :width 400 :alt ciudades :align center
     #+attr_latex: :caption Ciudades :width ""
-    #+RESULTS[6493b16fe90c1a858cf66608b971724ae961d2b3]: ciudades
+    #+RESULTS[b185a9d5257c9568454dbb4eb4faa757be3251b6]: ciudades
     [[file:ciudades.png]]
 
 ** Costos
@@ -422,7 +424,7 @@
     
     #+attr_html: :width 400 :alt ciudades-02 :align center
     #+attr_latex: :float t :width ""
-    #+RESULTS[258581840b8887ffb76ad4f7020f15dbc8b8c6bc]: ciudades-02
+    #+RESULTS[92de380f8766afae043be5dd8b9d4fdeb1418616]: ciudades-02
     [[file:ciudades-02.png]]
 
     
@@ -513,7 +515,8 @@
     
     #+attr_html: :width 400 :alt ciudades-03 :align center
     #+attr_latex: :float t :width ""
-    #+RESULTS: ciudades-03
+    #+RESULTS[638bfbcb8db4965c96cf159e753bc583796c3477]: ciudades-03
+    [[file:ciudades-03.png]]
 
 ** Si el agente viajero usara el algoritmo glotón
 
@@ -576,14 +579,15 @@
     
     #+attr_html: :width 400 :alt ciudades-04 :align center
     #+attr_latex: :float t :width ""
-    #+RESULTS: ciudades-04
+    #+RESULTS[2114c716028184edf61b059db5247ac638b3d7c2]: ciudades-04
+    [[file:ciudades-04.png]]
 
 ** Notas sobre el problema del agente viajero
    :PROPERTIES:
    :BEAMER_act: [<+->]
    :END:
 
-   - No se conoce un algoritmo ``eficiente'' que resuelva todas las
+   - No se conoce un algoritmo "eficiente" que resuelva todas las
      instancias del problema.
    - Tampoco se ha demostrado que no exista tal algoritmo.
    - Sin embargo, se han encontrado algoritmos aceptables si los
@@ -595,7 +599,7 @@
 
 #+caption: 
 #+ATTR_LaTeX: :width 10cm 
-[[file:/home/rafael/Dropbox/TeXfiles/Platicas/2011uamizt/mathinternals1.png]]
+[[file:mathinternals1.png]]
 
 ** 
 
